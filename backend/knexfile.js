@@ -7,7 +7,7 @@ module.exports = {
 
   development: {
     client: 'postgresql',
-    connection: "postgres://vowzlpib:mcR14pIkdBOcYS-TAVcTLPtbN3Zv0dmb@arjuna.db.elephantsql.com/vowzlpib"
+    connection: "postgres://qlcyprra:dG4DnTLikWLpkCNXSx2S4CbiRsgHaBTZ@arjuna.db.elephantsql.com/qlcyprra"
   },
 
   staging: {

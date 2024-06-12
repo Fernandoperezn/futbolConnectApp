@@ -5,7 +5,7 @@ const create = (bodyUser) =>{
     return db
         .insert(bodyUser)
         .into('users')
-        .returning(['nickname','first_name','email','password'])
+        .returning(['email','password'])
     }
     
 //Obtener todos los usuarios
@@ -21,7 +21,7 @@ const findOne = (idUser) => {
     return db
     .select("*")
     .from('users')
-    .where({ user_id: idUser, active: true})
+    .where({ user_id: idUser, is_active: true})
 }
 
 //Modelo actualizar una mascota por id
@@ -29,14 +29,14 @@ const update = (idUser, bodyToUpdate) => {
     return db
     .update(bodyToUpdate)
     .from( 'users' )
-    .where({user_id: idUser, active: true})
-    .returning(['nickname','first_name','email','password'])
+    .where({user_id: idUser, is_active: true})
+    .returning(['email','password','first_name'])
 }
 
 //Modelo eliminar una mascota por id
 const logicDelete = (idUser) => {
     return db
-    .update({ active: false })
+    .update({ is_active: false })
     .from('users')
     .where({ user_id: idUser})
 }
@@ -46,7 +46,7 @@ const findOneByEmail = (idEmail) =>{
     return db
     .select('*')
     .from('users')
-    .where({ email: idEmail, active: true })
+    .where({ email: idEmail, is_active: true })
     .first()
 }
 
