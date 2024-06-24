@@ -1,0 +1,24 @@
+.dashboard-page {
+    display: flex;
+    flex-direction: row; /* Asegura que los hijos estén en una fila */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* MainDashboard container */
+  .dashboard-container {
+    flex-grow: 1;
+    padding: 20px;
+    background: linear-gradient(180deg, #686869, #8181cf); /* Negro difuminado en morado */
+    backdrop-filter: blur(10px); /* Blur effect */
+    display: flex;
+    flex-direction: column;
+  }
+  

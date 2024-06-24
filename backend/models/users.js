@@ -16,21 +16,22 @@ const findAll = () => {
     .where({ is_active :true });
 }
 
-//Modelo buscar una mascota por id
+//Modelo buscar un user por id
 const findOne = (idUser) => {
     return db
-    .select("*")
+    .select('first_name')
     .from('users')
     .where({ user_id: idUser, is_active: true})
+    .returning(['first_name'])
 }
 
-//Modelo actualizar una mascota por id
+//Modelo actualizar una usuario por id
 const update = (idUser, bodyToUpdate) => {
     return db
     .update(bodyToUpdate)
     .from( 'users' )
     .where({user_id: idUser, is_active: true})
-    .returning(['email','password','first_name'])
+    .returning(['first_name'])
 }
 
 //Modelo eliminar una mascota por id
@@ -49,8 +50,6 @@ const findOneByEmail = (idEmail) =>{
     .where({ email: idEmail, is_active: true })
     .first()
 }
-
-
 
 module.exports = {
     create,

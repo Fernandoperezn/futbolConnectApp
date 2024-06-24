@@ -83,7 +83,7 @@ const findAllUsers = async (req, res) => {
 };
 
 // Encontrar un usuario por id
-const findOneUser = async (req, res) => {
+/* const findOneUser = async (req, res) => {
     try {
         const idUser = req.params.id;
 
@@ -97,7 +97,23 @@ const findOneUser = async (req, res) => {
         console.error(error);
         res.status(400).json({ error: 'Error al buscar el usuario' });
     }
+}; */
+
+const findOneUser = async (req, res) => {
+    try {
+        const idUser = req.params.id;
+        const user = await Users.findOne(idUser);
+        if (!user || user.length === 0) {
+            return res.status(404).json({ message: 'No se encontró el usuario con el ID dado' });
+        }
+        console.log(user[0]); // Verifica la respuesta
+        res.status(200).json(user[0]);
+    } catch (error) {
+        console.error(error);
+        res.status(400).json({ error: 'Error al buscar el usuario' });
+    }
 };
+
 
 // Actualizar un usuario por id
 const updateUser = async (req, res) => {
@@ -132,6 +148,7 @@ const logicDeleteUser = async (req, res) => {
         res.status(400).json({ error: 'Error al eliminar el usuario' });
     }
 };
+
 
 module.exports = {
     createUser,

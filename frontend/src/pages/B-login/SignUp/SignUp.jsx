@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import NavBar from '../../../components/NavBar/NavBar'
-
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import fotoSignUp from '../../../assets/fotoSignUp.jpg';
