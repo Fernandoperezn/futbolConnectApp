@@ -1,0 +1,29 @@
+/* CalendarSection.css */
+:root {
+    --rdp-background-color-dark: #333;
+    --rdp-accent-color-dark: #fff;
+  }
+  
+  [data-theme="dark"] .rdp,
+  .dark .rdp {
+    --rdp-background-color: var(--rdp-background-color-dark);
+    --rdp-accent-color: var(--rdp-accent-color-dark);
+  }
+  
+  .calendar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rdp {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .calendar-container {
+    width: 100%;
+    height: 100vh; /* O ajusta a tu preferencia */
+  }

@@ -3,7 +3,6 @@ import SideBar from '../../../components/SideBar/SideBar';
 import MainDashboard from '../../../components/MainDashboard/MainDashboard';
 import pp from '../../../assets/pp.jpg';
 import './dashboardPage.css';
-import useFetchUser from '../../../hooks/useFetchUser';
 
 const dashboardItems = [
   {

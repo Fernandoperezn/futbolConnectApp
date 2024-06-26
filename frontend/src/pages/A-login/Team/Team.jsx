@@ -1,10 +1,14 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar/SideBar'
+import TeamSection from '../../../components/TeamSection/TeamSection'
 
 const Team = () => {
   return (
     <>
-      <SideBar />
+      <div className="dashboard-page">
+        <SideBar />
+        <TeamSection />
+      </div>
     </>
   )
 }
