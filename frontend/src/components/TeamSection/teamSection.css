@@ -1,0 +1,150 @@
+.dashboard-container {
+    background-color: #f0f4f8;
+    padding: 20px;
+  }
+  
+  .bg-card {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo con opacidad */
+  }
+  
+  .text-foreground {
+    color: #333; /* Color del texto principal */
+  }
+  
+  .text-primary-foreground {
+    color: #fff; /* Color del texto principal en elementos destacados */
+  }
+  
+  .bg-primary {
+    background-color: #007bff; /* Color de fondo principal */
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .rounded-lg {
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .max-w-md {
+    max-width: 28rem; /* Ancho máximo */
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto; /* Centrar horizontalmente */
+  }
+  
+  .p-6 {
+    padding: 1.5rem; /* Padding */
+  }
+  
+  .p-4 {
+    padding: 1rem; /* Padding */
+  }
+  
+  .flex {
+    display: flex; /* Flexbox */
+  }
+  
+  .justify-between {
+    justify-content: space-between; /* Justificar entre elementos */
+  }
+  
+  .items-center {
+    align-items: center; /* Alinear verticalmente al centro */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Margen inferior */
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem; /* Margen inferior */
+  }
+  
+  .mt-4 {
+    margin-top: 1rem; /* Margen superior */
+  }
+  
+  .text-xl {
+    font-size: 1.25rem; /* Tamaño de texto */
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Tamaño de texto */
+  }
+  
+  .font-semibold {
+    font-weight: 600; /* Peso de fuente */
+  }
+  
+  .space-y-1 > :not(:last-child) {
+    margin-bottom: 0.25rem; /* Espaciado entre elementos de la lista */
+  }
+  
+  .w-10 {
+    width: 2.5rem; /* Ancho */
+  }
+  
+  .h-10 {
+    height: 2.5rem; /* Altura */
+  }
+  
+  .rounded-full {
+    border-radius: 50%; /* Bordes redondeados completos */
+  }
+  
+  .mr-2 {
+    margin-right: 0.5rem; /* Margen derecho */
+  }
+  
+  .flex-shrink-0 {
+    flex-shrink: 0; /* No reducir tamaño */
+  }
+  
+  .w-36 {
+    width: 9rem; /* Ancho */
+  }
+  
+  .h-auto {
+    height: auto; /* Altura automática */
+  }
+  
+  .absolute {
+    position: absolute; /* Posición absoluta */
+  }
+  
+  .top-0 {
+    top: 0; /* Arriba */
+  }
+  
+  .right-0 {
+    right: 0; /* Derecha */
+  }
+  
+  .w-6 {
+    width: 1.5rem; /* Ancho */
+  }
+  
+  .h-6 {
+    height: 1.5rem; /* Altura */
+  }
+  
+  .-mt-2 {
+    margin-top: -0.5rem; /* Margen superior negativo */
+  }
+  
+  .mr-2 {
+    margin-right: 0.5rem; /* Margen derecho */
+  }
+  
+  .bg-cover {
+    background-size: cover; /* Cubrir fondo */
+  }
+  
+  .bg-center {
+    background-position: center; /* Centrar fondo */
+  }
+  
