@@ -24,6 +24,16 @@ const dashboardItems = [
     title: 'Estadisticas',
     link: '/statics',
     details: ['Possession: 65%', 'Overall price: $690.2m', 'Transfer budget: $240.6m', 'Average score: 7.2']
+  },
+  {
+    title: 'Draft de jugadores',
+    link: '/draft',
+    details: ['Possession: 65%', 'Overall price: $690.2m', 'Transfer budget: $240.6m', 'Average score: 7.2']
+  },
+  {
+    title: 'Perfil de jugador',
+    link: '/profile',
+    details: ['Possession: 65%', 'Overall price: $690.2m', 'Transfer budget: $240.6m', 'Average score: 7.2']
   }
 ];
 

@@ -7,9 +7,9 @@ const HeroSection = ({
   backgroundImage,
   headline,
   description,
-  signupRoute,
+  loginRoute,
   aboutUsRoute,
-  signupButtonText,
+  loginButtonText,
   aboutUsButtonText
 }) => {
   const navigate = useNavigate();
@@ -27,8 +27,8 @@ const HeroSection = ({
         <h1 className="headline">{headline}</h1>
         <p className="description">{description}</p>
         <div className="button-group">
-          <button onClick={() => navigateToRoute(signupRoute)} className="btn btn-primary">
-            {signupButtonText}
+          <button onClick={() => navigateToRoute(loginRoute)} className="btn btn-primary">
+            {loginButtonText}
           </button>
           <button onClick={() => navigateToRoute(aboutUsRoute)} className="btn btn-secondary">
             {aboutUsButtonText}
@@ -43,9 +43,9 @@ HeroSection.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  signupRoute: PropTypes.string.isRequired,
+  loginRoute: PropTypes.string.isRequired,
   aboutUsRoute: PropTypes.string.isRequired,
-  signupButtonText: PropTypes.string.isRequired,
+  loginButtonText: PropTypes.string.isRequired,
   aboutUsButtonText: PropTypes.string.isRequired
 };
 

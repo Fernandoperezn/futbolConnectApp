@@ -11,9 +11,9 @@ const Home = () => {
         backgroundImage={bgi}
         headline="FútbolConnect"
         description="Unidos por el fútbol, conectados por la pasión"
-        signupRoute="/signup"
+        loginRoute="/login"
         aboutUsRoute="/aboutUs"
-        signupButtonText="Iniciar sesión"
+        loginButtonText="Iniciar sesión"
         aboutUsButtonText="Más información"
       />
     </>
