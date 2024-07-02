@@ -1,0 +1,47 @@
+/* login.css */
+
+/* Estilos para la página de login */
+.login-page {
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Efecto de blur y transparencia */
+.login-form-container {
+  background: transparent; /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  max-width: 500px; /* Ancho máximo para que no se extienda demasiado */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho posible */
+  margin: 20px; /* Margen para que no toque los bordes de la pantalla */
+}
+
+/* Ajustes de formulario y texto centrado */
+.form-signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  text-align: center;
+}
+
+/* Estilo para botón de mostrar/ocultar contraseña */
+.btn-outline-secondary {
+  font-size: 14px; /* Ajustar el tamaño de la fuente del botón */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-form-container {
+    margin: 10px; /* Menor margen en pantallas más pequeñas */
+  }
+}

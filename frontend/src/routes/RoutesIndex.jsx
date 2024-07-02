@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Calendar, Chat, Dashboard, Profile, Settings, Statics, Team, Tournament, AboutUs, Contact, Home, Login, SignUp } from '../pages'
+import ProfileSection from '../components/ProfileSection/ProfileSection'
 
 const RoutesIndex = () => {
   return (
@@ -17,6 +18,7 @@ const RoutesIndex = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/signUp" element={<SignUp />} />
+      <Route path="/profile/edit" element={<ProfileSection />} />
 
     </Routes>
   )

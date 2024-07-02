@@ -15,7 +15,7 @@ const ContactForm = () => {
             <img className="img-fluid rounded col-10" src={bgImg02} alt="left-img" />
           </div>
           <div className="form-right">
-            <h1>Contact Us</h1>
+            <h1>Contactanos atra</h1>
             <p>We'd love to hear from you!</p>
             <form>
               <input type="text" name="name" placeholder="Your Name" required />

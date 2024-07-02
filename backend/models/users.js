@@ -19,7 +19,7 @@ const findAll = () => {
 //Modelo buscar un user por id
 const findOne = (idUser) => {
     return db
-    .select('first_name')
+    .select('*')
     .from('users')
     .where({ user_id: idUser, is_active: true})
     .returning(['first_name'])
